@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Waypoint Plugin for Bukkit">
+    <output-path>$PROJECT_DIR$/out/artifacts/Waypoint_Plugin_for_Bukkit</output-path>
+    <root id="archive" name="waypoint-0.0.1a-SNAPSHOT.jar">
+      <element id="module-output" name="Waypoint Plugin" />
+    </root>
+  </artifact>
+</component>
