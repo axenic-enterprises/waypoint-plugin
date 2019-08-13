@@ -80,7 +80,7 @@ public class Waypoint implements Serializable {
     }
 
     /**
-     * Deerializes this {@link Waypoint} from an object input stream.
+     * Deserializes this {@link Waypoint} from an object input stream.
      * @param in the input stream to deserialize from
      * @throws IOException
      */
