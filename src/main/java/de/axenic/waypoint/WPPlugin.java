@@ -5,28 +5,28 @@ import org.bukkit.plugin.java.JavaPlugin;
 /**
  * A singleton that represents the Waypoint plugin in code.
  */
-public final class WaypointPlugin extends JavaPlugin {
+public final class WPPlugin extends JavaPlugin {
 
     //region Singleton Pattern
     /**
-     * The only instance of {@link WaypointPlugin} that will exist.
+     * The only instance of {@link WPPlugin} that will exist.
      */
-    private static WaypointPlugin instance;
+    private static WPPlugin instance;
 
     /**
-     * Returns the singleton instance of {@link WaypointPlugin}.
-     * @return the singleton instance of {@link WaypointPlugin}
+     * Returns the singleton instance of {@link WPPlugin}.
+     * @return the singleton instance of {@link WPPlugin}
      */
-    public static WaypointPlugin getPlugin() {
+    public static WPPlugin getPlugin() {
         return instance;
     }
 
     /**
      * <b>BUKKIT-ONLY CONSTRUCTOR!</b><br>
-     * Do not use this constructor to instantiate {@link WaypointPlugin}.
+     * Do not use this constructor to instantiate {@link WPPlugin}.
      * Instead, obtain a singleton instance via {@link #getPlugin()}.
      */
-    public WaypointPlugin() {
+    public WPPlugin() {
         instance = this;
     }
     //endregion
