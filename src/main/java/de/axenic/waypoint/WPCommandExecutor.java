@@ -6,9 +6,31 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
 /**
- * A bukkit command executor for the /waypoint command.
+ * The bukkit command executor for the /waypoint command.
  */
 public final class WPCommandExecutor implements CommandExecutor {
+
+    //region Singleton Pattern
+    /**
+     * The only instance of {@link WPCommandExecutor} that will exist.
+     */
+    private static WPCommandExecutor instance = new WPCommandExecutor();
+
+    /**
+     * Returns the singleton instance of {@link WPCommandExecutor}.
+     *
+     * @return the singleton instance of {@link WPCommandExecutor}
+     */
+    public static WPCommandExecutor getExecutor() {
+        return instance;
+    }
+
+    /**
+     * Private constructor.
+     */
+    private WPCommandExecutor() {
+    }
+    //endregion
 
     /**
      * Indicates that a valid command was entered.

@@ -36,7 +36,7 @@ public final class WPPlugin extends JavaPlugin {
      */
     @Override
     public void onEnable() {
-
+        getServer().getPluginCommand("waypoint").setExecutor(WPCommandExecutor.getExecutor());
     }
 
     /**
