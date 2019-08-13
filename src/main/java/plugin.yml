@@ -1,0 +1,15 @@
+name: Waypoint
+authors:
+  - Linnear Li
+  - theCryonix
+description: Makes locations in the world saveable as waypoints
+version: 0.0.1a-SNAPSHOT
+
+main: de.axenic.waypoint.WPPlugin
+
+commands:
+  waypoint:
+    description: Add, remove, share, or look at waypoints
+    usage: "Gebrauch von /<command>: /<command> <get|set|share|delete> [name]"
+    aliases:
+      - wp
