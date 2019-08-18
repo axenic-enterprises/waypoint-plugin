@@ -13,7 +13,7 @@ public final class WPMessenger {
     /**
      * The only instance of {@link WPMessenger} that will exist.
      */
-    private static WPMessenger instance;
+    private static WPMessenger instance = new WPMessenger();
 
     /**
      * Private constructor.
