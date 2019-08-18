@@ -64,6 +64,14 @@ public class Waypoint implements Serializable {
         this.name = name;
     }
 
+    /**
+     * Returns a human-readable representation of this waypoint.
+     * @return a human-readable representation of this waypoint
+     */
+    public String toString() {
+        return name + " (in " + location.getWorld().getName() + "): " + location.getBlockX() + ' ' + location.getBlockY() + ' ' + location.getBlockZ();
+    }
+
     //region Serialization
     /**
      * Serializes this {@link Waypoint} to an object output stream.
