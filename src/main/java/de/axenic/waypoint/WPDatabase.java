@@ -117,4 +117,16 @@ public final class WPDatabase implements Serializable {
         }
         return null;
     }
+
+    /**
+     * Gets all waypoints of a player.
+     * @param uuid the uuid of the player whose waypoints to get
+     * @return the waypoints, or null if the player does not have any waypoint
+     */
+    public Iterable<Waypoint> getWaypoints(UUID uuid) {
+        if (!personal.containsKey(uuid)) {
+            return null;
+        }
+        return personal.get(uuid);
+    }
 }
